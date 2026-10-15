@@ -1,1087 +1,159 @@
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:roman;
-	mso-font-pitch:variable;
-	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
-@font-face
-	{font-family:"Century Gothic";
-	panose-1:2 11 5 2 2 2 2 2 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:swiss;
-	mso-font-pitch:variable;
-	mso-font-signature:647 0 0 0 159 0;}
-@font-face
-	{font-family:Corbel;
-	panose-1:2 11 5 3 2 2 4 2 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:swiss;
-	mso-font-pitch:variable;
-	mso-font-signature:-1610611985 1073783883 0 0 415 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-parent:"";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Century Gothic";
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-h1
-	{mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Kop 1 Char";
-	mso-style-next:Standaard;
-	margin-top:18.0pt;
-	margin-right:0cm;
-	margin-bottom:4.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:1;
-	font-size:20.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#AB1E19;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	font-weight:normal;}
-h2
-	{mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Kop 2 Char";
-	mso-style-next:Standaard;
-	margin-top:8.0pt;
-	margin-right:0cm;
-	margin-bottom:4.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:2;
-	font-size:16.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#AB1E19;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	font-weight:normal;}
-h3
-	{mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Kop 3 Char";
-	mso-style-next:Standaard;
-	margin-top:8.0pt;
-	margin-right:0cm;
-	margin-bottom:4.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:3;
-	font-size:14.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#AB1E19;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	font-weight:normal;}
-h4
-	{mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Kop 4 Char";
-	mso-style-next:Standaard;
-	margin-top:4.0pt;
-	margin-right:0cm;
-	margin-bottom:2.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:4;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#AB1E19;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	font-weight:normal;
-	font-style:italic;}
-h5
-	{mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Kop 5 Char";
-	mso-style-next:Standaard;
-	margin-top:4.0pt;
-	margin-right:0cm;
-	margin-bottom:2.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:5;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#AB1E19;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	font-weight:normal;}
-h6
-	{mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Kop 6 Char";
-	mso-style-next:Standaard;
-	margin-top:2.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:6;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#595959;
-	mso-themecolor:text1;
-	mso-themetint:166;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	font-weight:normal;
-	font-style:italic;}
-p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
-	{mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Kop 7 Char";
-	mso-style-next:Standaard;
-	margin-top:2.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:7;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#595959;
-	mso-themecolor:text1;
-	mso-themetint:166;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
-	{mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Kop 8 Char";
-	mso-style-next:Standaard;
-	margin:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:8;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#272727;
-	mso-themecolor:text1;
-	mso-themetint:216;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	font-style:italic;}
-p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
-	{mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-qformat:yes;
-	mso-style-link:"Kop 9 Char";
-	mso-style-next:Standaard;
-	margin:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	mso-outline-level:9;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#272727;
-	mso-themecolor:text1;
-	mso-themetint:216;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoToc1, li.MsoToc1, div.MsoToc1
-	{mso-style-update:auto;
-	mso-style-priority:39;
-	mso-style-next:Standaard;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:5.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Century Gothic";
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoToc2, li.MsoToc2, div.MsoToc2
-	{mso-style-update:auto;
-	mso-style-priority:39;
-	mso-style-next:Standaard;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:5.0pt;
-	margin-left:11.0pt;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Century Gothic";
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoTitle, li.MsoTitle, div.MsoTitle
-	{mso-style-priority:10;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Titel Char";
-	mso-style-next:Standaard;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:4.0pt;
-	margin-left:0cm;
-	mso-add-space:auto;
-	mso-pagination:widow-orphan;
-	font-size:28.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	letter-spacing:-.5pt;
-	mso-font-kerning:14.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
-	{mso-style-priority:10;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Titel Char";
-	mso-style-next:Standaard;
-	mso-style-type:export-only;
-	margin:0cm;
-	mso-add-space:auto;
-	mso-pagination:widow-orphan;
-	font-size:28.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	letter-spacing:-.5pt;
-	mso-font-kerning:14.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
-	{mso-style-priority:10;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Titel Char";
-	mso-style-next:Standaard;
-	mso-style-type:export-only;
-	margin:0cm;
-	mso-add-space:auto;
-	mso-pagination:widow-orphan;
-	font-size:28.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	letter-spacing:-.5pt;
-	mso-font-kerning:14.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
-	{mso-style-priority:10;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Titel Char";
-	mso-style-next:Standaard;
-	mso-style-type:export-only;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:4.0pt;
-	margin-left:0cm;
-	mso-add-space:auto;
-	mso-pagination:widow-orphan;
-	font-size:28.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	letter-spacing:-.5pt;
-	mso-font-kerning:14.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
-	{mso-style-priority:11;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Ondertitel Char";
-	mso-style-next:Standaard;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:14.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#595959;
-	mso-themecolor:text1;
-	mso-themetint:166;
-	letter-spacing:.75pt;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-a:link, span.MsoHyperlink
-	{mso-style-priority:99;
-	color:#F0532B;
-	mso-themecolor:hyperlink;
-	text-decoration:underline;
-	text-underline:single;}
-a:visited, span.MsoHyperlinkFollowed
-	{mso-style-noshow:yes;
-	mso-style-priority:99;
-	color:#F38B53;
-	mso-themecolor:followedhyperlink;
-	text-decoration:underline;
-	text-underline:single;}
-p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
-	{mso-style-priority:1;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-parent:"";
-	mso-style-link:"Geen afstand Char";
-	margin:0cm;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{mso-style-priority:34;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:36.0pt;
-	mso-add-space:auto;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Century Gothic";
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
-	{mso-style-priority:34;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-type:export-only;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	mso-add-space:auto;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Century Gothic";
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
-	{mso-style-priority:34;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-type:export-only;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:36.0pt;
-	mso-add-space:auto;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Century Gothic";
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
-	{mso-style-priority:34;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-type:export-only;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:36.0pt;
-	mso-add-space:auto;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Century Gothic";
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
-p.MsoQuote, li.MsoQuote, div.MsoQuote
-	{mso-style-priority:29;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Citaat Char";
-	mso-style-next:Standaard;
-	margin-top:8.0pt;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	text-align:center;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Century Gothic";
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	color:#404040;
-	mso-themecolor:text1;
-	mso-themetint:191;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	font-style:italic;}
-p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
-	{mso-style-priority:30;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-link:"Duidelijk citaat Char";
-	mso-style-next:Standaard;
-	margin-top:18.0pt;
-	margin-right:43.2pt;
-	margin-bottom:18.0pt;
-	margin-left:43.2pt;
-	text-align:center;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	border:none;
-	mso-border-top-alt:solid #AB1E19 .5pt;
-	mso-border-top-themecolor:accent1;
-	mso-border-top-themeshade:191;
-	mso-border-bottom-alt:solid #AB1E19 .5pt;
-	mso-border-bottom-themecolor:accent1;
-	mso-border-bottom-themeshade:191;
-	padding:0cm;
-	mso-padding-alt:10.0pt 0cm 10.0pt 0cm;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Century Gothic";
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	color:#AB1E19;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;
-	font-style:italic;}
-span.MsoIntenseEmphasis
-	{mso-style-priority:21;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	color:#AB1E19;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	font-style:italic;}
-span.MsoIntenseReference
-	{mso-style-priority:32;
-	mso-style-unhide:no;
-	mso-style-qformat:yes;
-	font-variant:small-caps;
-	color:#AB1E19;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	letter-spacing:.25pt;
-	font-weight:bold;}
-p.MsoTocHeading, li.MsoTocHeading, div.MsoTocHeading
-	{mso-style-priority:39;
-	mso-style-qformat:yes;
-	mso-style-parent:"Kop 1";
-	mso-style-next:Standaard;
-	margin-top:12.0pt;
-	margin-right:0cm;
-	margin-bottom:0cm;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan lines-together;
-	page-break-after:avoid;
-	font-size:16.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#AB1E19;
-	mso-themecolor:accent1;
-	mso-themeshade:191;}
-span.Kop1Char
-	{mso-style-name:"Kop 1 Char";
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Kop 1";
-	mso-ansi-font-size:20.0pt;
-	mso-bidi-font-size:20.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#AB1E19;
-	mso-themecolor:accent1;
-	mso-themeshade:191;}
-span.Kop2Char
-	{mso-style-name:"Kop 2 Char";
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Kop 2";
-	mso-ansi-font-size:16.0pt;
-	mso-bidi-font-size:16.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#AB1E19;
-	mso-themecolor:accent1;
-	mso-themeshade:191;}
-span.Kop3Char
-	{mso-style-name:"Kop 3 Char";
-	mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Kop 3";
-	mso-ansi-font-size:14.0pt;
-	mso-bidi-font-size:14.0pt;
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#AB1E19;
-	mso-themecolor:accent1;
-	mso-themeshade:191;}
-span.Kop4Char
-	{mso-style-name:"Kop 4 Char";
-	mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Kop 4";
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#AB1E19;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	font-style:italic;}
-span.Kop5Char
-	{mso-style-name:"Kop 5 Char";
-	mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Kop 5";
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#AB1E19;
-	mso-themecolor:accent1;
-	mso-themeshade:191;}
-span.Kop6Char
-	{mso-style-name:"Kop 6 Char";
-	mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Kop 6";
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#595959;
-	mso-themecolor:text1;
-	mso-themetint:166;
-	font-style:italic;}
-span.Kop7Char
-	{mso-style-name:"Kop 7 Char";
-	mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Kop 7";
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#595959;
-	mso-themecolor:text1;
-	mso-themetint:166;}
-span.Kop8Char
-	{mso-style-name:"Kop 8 Char";
-	mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Kop 8";
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#272727;
-	mso-themecolor:text1;
-	mso-themetint:216;
-	font-style:italic;}
-span.Kop9Char
-	{mso-style-name:"Kop 9 Char";
-	mso-style-noshow:yes;
-	mso-style-priority:9;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Kop 9";
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#272727;
-	mso-themecolor:text1;
-	mso-themetint:216;}
-span.TitelChar
-	{mso-style-name:"Titel Char";
-	mso-style-priority:10;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:Titel;
-	mso-ansi-font-size:28.0pt;
-	mso-bidi-font-size:28.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:major-latin;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:major-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	letter-spacing:-.5pt;
-	mso-font-kerning:14.0pt;}
-span.OndertitelChar
-	{mso-style-name:"Ondertitel Char";
-	mso-style-priority:11;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:Ondertitel;
-	mso-ansi-font-size:14.0pt;
-	mso-bidi-font-size:14.0pt;
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:major-fareast;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:major-bidi;
-	color:#595959;
-	mso-themecolor:text1;
-	mso-themetint:166;
-	letter-spacing:.75pt;}
-span.CitaatChar
-	{mso-style-name:"Citaat Char";
-	mso-style-priority:29;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:Citaat;
-	color:#404040;
-	mso-themecolor:text1;
-	mso-themetint:191;
-	font-style:italic;}
-span.DuidelijkcitaatChar
-	{mso-style-name:"Duidelijk citaat Char";
-	mso-style-priority:30;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Duidelijk citaat";
-	color:#AB1E19;
-	mso-themecolor:accent1;
-	mso-themeshade:191;
-	font-style:italic;}
-p.Standaard1, li.Standaard1, div.Standaard1
-	{mso-style-name:Standaard1;
-	mso-style-unhide:no;
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:106%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Corbel",sans-serif;
-	mso-fareast-font-family:"Century Gothic";
-	mso-fareast-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;}
-span.GeenafstandChar
-	{mso-style-name:"Geen afstand Char";
-	mso-style-priority:1;
-	mso-style-unhide:no;
-	mso-style-locked:yes;
-	mso-style-link:"Geen afstand";
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;
-	mso-font-kerning:0pt;
-	mso-ligatures:none;
-	mso-fareast-language:NL;}
-span.SpellE
-	{mso-style-name:"";
-	mso-spl-e:yes;}
-.MsoChpDefault
-	{mso-style-type:export-only;
-	mso-default-props:yes;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:"Century Gothic";
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-fareast-language:EN-US;}
-.MsoPapDefault
-	{mso-style-type:export-only;
-	margin-bottom:8.0pt;
-	line-height:107%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:70.85pt 70.85pt 70.85pt 70.85pt;
-	mso-header-margin:35.4pt;
-	mso-footer-margin:35.4pt;
-	mso-page-numbers:0;
-	mso-title-page:yes;
-	mso-paper-source:0;}
-div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- @list l0
-	{mso-list-id:1226726040;
-	mso-list-type:hybrid;
-	mso-list-template-ids:-247712772 68354063 68354073 68354075 68354063 68354073 68354075 68354063 68354073 68354075;}
-@list l0:level1
-	{mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l0:level2
-	{mso-level-number-format:alpha-lower;
-	mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l0:level3
-	{mso-level-number-format:roman-lower;
-	mso-level-tab-stop:none;
-	mso-level-number-position:right;
-	text-indent:-9.0pt;}
-@list l0:level4
-	{mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l0:level5
-	{mso-level-number-format:alpha-lower;
-	mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l0:level6
-	{mso-level-number-format:roman-lower;
-	mso-level-tab-stop:none;
-	mso-level-number-position:right;
-	text-indent:-9.0pt;}
-@list l0:level7
-	{mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l0:level8
-	{mso-level-number-format:alpha-lower;
-	mso-level-tab-stop:none;
-	mso-level-number-position:left;
-	text-indent:-18.0pt;}
-@list l0:level9
-	{mso-level-number-format:roman-lower;
-	mso-level-tab-stop:none;
-	mso-level-number-position:right;
-	text-indent:-9.0pt;}
-ol
-	{margin-bottom:0cm;}
-ul
-	{margin-bottom:0cm;}
+/* Recepten - stylesheet
+   Colors and font sourced from the original Word export:
+   headings #AB1E19, links #F0532B / visited #F38B53, hero gradient
+   sampled from the former cover image. */
 
-/* --- The two sections below were originally wrapped in MS-Office-only
-   conditional comments (<!--[if !mso]> / <!--[if gte mso 10]>) and are
-   inert in every modern browser; kept here only for completeness. --- */
+:root {
+  --font-main: "Century Gothic", CenturyGothic, "Trebuchet MS", Verdana, sans-serif;
+  --color-heading: #AB1E19;
+  --color-text: #333333;
+  --color-link: #F0532B;
+  --color-link-visited: #F38B53;
+  --color-muted: #595959;
+  --max-width: 800px;
+}
 
-/* VML shape rendering shim (legacy Internet Explorer only) */
-v\:* {behavior:url(#default#VML);}
-o\:* {behavior:url(#default#VML);}
-w\:* {behavior:url(#default#VML);}
-.shape {behavior:url(#default#VML);}
+* {
+  box-sizing: border-box;
+}
 
-/* MsoNormalTable definition (only relevant if this file is reopened in Word) */
- /* Style Definitions */
- table.MsoNormalTable
-	{mso-style-name:Standaardtabel;
-	mso-tstyle-rowband-size:0;
-	mso-tstyle-colband-size:0;
-	mso-style-noshow:yes;
-	mso-style-priority:99;
-	mso-style-parent:"";
-	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
-	mso-para-margin-top:0cm;
-	mso-para-margin-right:0cm;
-	mso-para-margin-bottom:8.0pt;
-	mso-para-margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Century Gothic",sans-serif;
-	mso-ascii-font-family:"Century Gothic";
-	mso-ascii-theme-font:minor-latin;
-	mso-hansi-font-family:"Century Gothic";
-	mso-hansi-theme-font:minor-latin;
-	mso-font-kerning:1.0pt;
-	mso-ligatures:standardcontextual;
-	mso-fareast-language:EN-US;}
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-text);
+  background: #ffffff;
+}
+
+/* Hero banner (recreated with CSS instead of a baked-in cover image) */
+.hero {
+  background: linear-gradient(180deg, #feb173 0%, #fe9d58 25%, #fe882e 48%, #e37119 75%, #c05805 100%);
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Table of contents */
+.toc {
+  max-width: var(--max-width);
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.toc h2 {
+  color: var(--color-heading);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.toc ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.toc li ul {
+  padding-left: 1.25rem;
+}
+
+.toc li {
+  margin-bottom: 0.25rem;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+article {
+  margin-bottom: 3rem;
+}
+
+article h1 {
+  color: var(--color-heading);
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+article h2 {
+  color: var(--color-heading);
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+article h3 {
+  color: var(--color-heading);
+  font-size: 1.1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+}
+
+ul, ol {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--color-link-visited);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  width: 220px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tip {
+  font-style: italic;
+  color: var(--color-muted);
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 2.5rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+}
