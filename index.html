@@ -5,11 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Recepten</title>
 <meta name="description" content="Familierecepten: Lemon bars, Pasta Rode Pesto en Italiaanse salade met tomaat en mozzarella.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%8D%BD%EF%B8%8F</text></svg>">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="hero">
+<a class="skip-link" href="#main-content">Direct naar recepten</a>
+
+<header class="hero" id="top">
   <h1>Recepten</h1>
 </header>
 
@@ -28,21 +31,21 @@
   </ul>
 </nav>
 
-<main>
+<main id="main-content">
 
   <article id="lemon-bars">
-    <h1>Lemon bars</h1>
+    <h2 class="recipe-title">Lemon bars</h2>
 
     <section id="bodem">
-      <h2>Bodem</h2>
+      <h3 class="recipe-part">Bodem</h3>
 
-      <h3>Ingrediënten</h3>
+      <h4 class="label-heading">Ingrediënten</h4>
       <ul>
         <li>200 g boter, op kamertemperatuur en in blokjes</li>
         <li>100 g witte basterdsuiker</li>
       </ul>
 
-      <h3>Bereiding</h3>
+      <h4 class="label-heading">Bereiding</h4>
       <ol>
         <li>Mix de boter en basterdsuiker in een keukenmachine tot een licht en romig mengsel.</li>
         <li>Voeg 300 g bloem toe en mix tot er een deeg ontstaat.</li>
@@ -53,9 +56,9 @@
     </section>
 
     <section id="citroenlaag">
-      <h2>Citroenlaag</h2>
+      <h3 class="recipe-part">Citroenlaag</h3>
 
-      <h3>Ingrediënten</h3>
+      <h4 class="label-heading">Ingrediënten</h4>
       <ul>
         <li>375 g witte basterdsuiker</li>
         <li>50 g bloem, gezeefd</li>
@@ -63,7 +66,7 @@
         <li>6 eieren, losgeklopt</li>
       </ul>
 
-      <h3>Bereiding</h3>
+      <h4 class="label-heading">Bereiding</h4>
       <ol>
         <li>Meng de basterdsuiker met de gezeefde bloem.</li>
         <li>Voeg het citroensap toe en meng goed.</li>
@@ -73,12 +76,14 @@
         <li>Laat afkoelen en bestrooi met poedersuiker.</li>
       </ol>
     </section>
+
+    <p class="back-to-top"><a href="#top">↑ Terug naar boven</a></p>
   </article>
 
   <article id="pasta-rode-pesto">
-    <h1>Pasta Rode Pesto</h1>
+    <h2 class="recipe-title">Pasta Rode Pesto</h2>
 
-    <h3>Ingrediënten</h3>
+    <h3 class="label-heading">Ingrediënten</h3>
     <ul>
       <li>1 pak penne</li>
       <li>Potje rode pesto</li>
@@ -88,7 +93,7 @@
       <li>Basilicum</li>
     </ul>
 
-    <h3>Bereiding</h3>
+    <h3 class="label-heading">Bereiding</h3>
     <ol>
       <li>Pesto, crème fraîche en tomaatjes in 1 pan, doorwarmen en goed doorroeren.</li>
       <li>Mozzarella erbij doen.</li>
@@ -96,12 +101,14 @@
       <li>Pasta aan de pestomix toevoegen.</li>
       <li>Garneren met de basilicum.</li>
     </ol>
+
+    <p class="back-to-top"><a href="#top">↑ Terug naar boven</a></p>
   </article>
 
   <article id="italiaanse-salade">
-    <h1>Italiaanse salade met tomaat en mozzarella</h1>
+    <h2 class="recipe-title">Italiaanse salade met tomaat en mozzarella</h2>
 
-    <h3>Ingrediënten</h3>
+    <h3 class="label-heading">Ingrediënten</h3>
     <ul>
       <li>200 gr sla</li>
       <li>500 gr cherrytomaatjes</li>
@@ -110,7 +117,7 @@
       <li>8 plakken parmaham</li>
     </ul>
 
-    <h3>Voor de dressing</h3>
+    <h3 class="label-heading">Voor de dressing</h3>
     <ul>
       <li>2 eetlepel balsamico azijn</li>
       <li>Scheutje olijfolie</li>
@@ -119,18 +126,29 @@
       <li>Peper en zout</li>
     </ul>
 
-    <h3>Bereiding</h3>
+    <h3 class="label-heading">Bereiding</h3>
     <p>Meng de ingrediënten voor de dressing door elkaar. Snijd de tomaatjes in tweeën. Meng de sla met de Italiaanse dressing, tomaatjes en mozzarella balletjes.</p>
 
     <div class="gallery">
-      <img src="files/image002.jpg" width="300" height="200" loading="lazy" alt="Cherrytomaatjes in partjes gesneden">
-      <img src="files/image004.jpg" width="300" height="200" loading="lazy" alt="Dressing van balsamico azijn en olijfolie">
-      <img src="files/image006.jpg" width="300" height="200" loading="lazy" alt="Afgewerkte Italiaanse salade met mozzarella in een kom">
+      <figure>
+        <img src="files/image002.jpg" width="300" height="200" loading="lazy" alt="Cherrytomaatjes in partjes gesneden">
+        <figcaption>Tomaatjes snijden</figcaption>
+      </figure>
+      <figure>
+        <img src="files/image004.jpg" width="300" height="200" loading="lazy" alt="Dressing van balsamico azijn en olijfolie">
+        <figcaption>Dressing mengen</figcaption>
+      </figure>
+      <figure>
+        <img src="files/image006.jpg" width="300" height="200" loading="lazy" alt="Afgewerkte Italiaanse salade met mozzarella in een kom">
+        <figcaption>Klaar om te serveren</figcaption>
+      </figure>
     </div>
 
     <p>Scheur de parmaham in stukken en verdeel over de Italiaanse salade samen met de pijnboompitten.</p>
 
     <p class="tip">Tip: voeg wat pasta toe aan de salade voor een maaltijdsalade.</p>
+
+    <p class="back-to-top"><a href="#top">↑ Terug naar boven</a></p>
   </article>
 
 </main>

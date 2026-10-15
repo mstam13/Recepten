@@ -1,20 +1,32 @@
 /* Recepten - stylesheet
-   Colors and font sourced from the original Word export:
-   headings #AB1E19, links #F0532B / visited #F38B53, hero gradient
-   sampled from the former cover image. */
+   Colors adapted from the original Word export with WCAG AA contrast
+   fixes applied: link/visited-link colors darkened, hero gradient
+   darkened so white title text stays readable at every point. */
 
 :root {
-  --font-main: "Century Gothic", CenturyGothic, "Trebuchet MS", Verdana, sans-serif;
+  --font-main: "Century Gothic", Questrial, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --color-heading: #AB1E19;
   --color-text: #333333;
-  --color-link: #F0532B;
-  --color-link-visited: #F38B53;
+  --color-link: #C8401D;
+  --color-link-visited: #A6460E;
   --color-muted: #595959;
   --max-width: 800px;
+  --text-width: 68ch;
 }
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body {
@@ -26,11 +38,28 @@ body {
   background: #ffffff;
 }
 
+/* Skip link: hidden until focused, helps keyboard/screen-reader users */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #ffffff;
+  color: var(--color-heading);
+  padding: 0.75rem 1rem;
+  z-index: 10;
+  border-radius: 0 0 6px 0;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 /* Hero banner (recreated with CSS instead of a baked-in cover image) */
 .hero {
-  background: linear-gradient(180deg, #feb173 0%, #fe9d58 25%, #fe882e 48%, #e37119 75%, #c05805 100%);
+  background: linear-gradient(180deg, #dd6620 0%, #d35a12 30%, #c04c0a 60%, #a8400a 100%);
   padding: 4rem 1.5rem;
   text-align: center;
+  scroll-margin-top: 1rem;
 }
 
 .hero h1 {
@@ -39,18 +68,23 @@ body {
   font-size: 3rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45), 0 2px 10px rgba(0, 0, 0, 0.25);
 }
 
 /* Table of contents */
 .toc {
   max-width: var(--max-width);
   margin: 2rem auto;
-  padding: 0 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #f0d9c9;
+  border-radius: 8px;
+  background: #fff8f3;
 }
 
 .toc h2 {
   color: var(--color-heading);
   font-size: 1.5rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
@@ -76,17 +110,28 @@ main {
 
 article {
   margin-bottom: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #eee2d8;
 }
 
-article h1 {
+article:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+h1, h2, h3, h4 {
+  scroll-margin-top: 1rem;
+}
+
+.recipe-title {
   color: var(--color-heading);
   font-size: 2rem;
-  margin-top: 2rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: normal;
 }
 
-article h2 {
+.recipe-part {
   color: var(--color-heading);
   font-size: 1.5rem;
   margin-top: 1.5rem;
@@ -94,7 +139,7 @@ article h2 {
   font-weight: normal;
 }
 
-article h3 {
+.label-heading {
   color: var(--color-heading);
   font-size: 1.1rem;
   margin-top: 1.25rem;
@@ -105,6 +150,7 @@ article h3 {
 ul, ol {
   margin: 0 0 1rem;
   padding-left: 1.5rem;
+  max-width: var(--text-width);
 }
 
 li {
@@ -113,6 +159,7 @@ li {
 
 p {
   margin: 0 0 1rem;
+  max-width: var(--text-width);
 }
 
 a {
@@ -124,19 +171,43 @@ a:visited {
   color: var(--color-link-visited);
 }
 
+.back-to-top {
+  margin-top: 1.5rem;
+  max-width: none;
+}
+
+.back-to-top a {
+  font-size: 0.9rem;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.25rem;
   margin: 1rem 0;
+  max-width: none;
+}
+
+.gallery figure {
+  margin: 0;
+  width: 220px;
+  max-width: 100%;
 }
 
 .gallery img {
+  display: block;
   max-width: 100%;
   height: auto;
-  width: 220px;
+  width: 100%;
   border-radius: 6px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.gallery figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  text-align: center;
 }
 
 .tip {
@@ -153,7 +224,41 @@ a:visited {
     font-size: 2rem;
   }
 
-  .gallery img {
+  .gallery figure {
     width: 100%;
+  }
+}
+
+/* Print: strip chrome/colors, keep ingredients and steps ink-friendly */
+@media print {
+  .skip-link,
+  .hero,
+  .toc,
+  .back-to-top {
+    display: none;
+  }
+
+  body {
+    color: #000;
+  }
+
+  .recipe-title,
+  .recipe-part,
+  .label-heading {
+    color: #000;
+  }
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  article {
+    border-top: none;
+    page-break-inside: avoid;
+  }
+
+  .gallery img {
+    box-shadow: none;
   }
 }
