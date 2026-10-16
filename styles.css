@@ -108,13 +108,15 @@ main {
   padding: 0 1.5rem 3rem;
 }
 
-article {
+article,
+.category {
   margin-bottom: 3rem;
   padding-top: 2rem;
   border-top: 1px solid #eee2d8;
 }
 
-article:first-of-type {
+article:first-of-type,
+.category:first-of-type {
   border-top: none;
   padding-top: 0;
 }
@@ -145,6 +147,94 @@ h1, h2, h3, h4 {
   margin-top: 1.25rem;
   margin-bottom: 0.4rem;
   font-weight: bold;
+}
+
+/* Category sections on the home page */
+.category-title {
+  color: var(--color-heading);
+  font-size: 1.75rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+}
+
+.recipe-card {
+  margin: 0;
+}
+
+.recipe-card a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  height: 100%;
+  padding: 1.25rem;
+  border: 1px solid #f0d9c9;
+  border-radius: 8px;
+  background: #fff8f3;
+  text-decoration: none;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.recipe-card a:hover,
+.recipe-card a:focus {
+  border-color: var(--color-heading);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card-title {
+  color: var(--color-heading);
+  font-size: 1.15rem;
+}
+
+.recipe-card-meta {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+/* Recipe page header: breadcrumb back-link and meal-type badge */
+.hero-recipe {
+  text-align: left;
+  padding: 2rem 1.5rem;
+}
+
+.hero-recipe .breadcrumb {
+  margin: 0 0 1rem;
+  max-width: none;
+}
+
+.hero-recipe .breadcrumb a {
+  color: #ffffff;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.hero-recipe h1 {
+  text-transform: none;
+  font-size: 2.25rem;
+  text-align: left;
+}
+
+.category-badge {
+  display: inline-block;
+  margin: 0.75rem 0 0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 ul, ol {
@@ -244,6 +334,7 @@ a:visited {
 
   .recipe-title,
   .recipe-part,
+  .category-title,
   .label-heading {
     color: #000;
   }
@@ -253,7 +344,8 @@ a:visited {
     text-decoration: none;
   }
 
-  article {
+  article,
+  .category {
     border-top: none;
     page-break-inside: avoid;
   }
