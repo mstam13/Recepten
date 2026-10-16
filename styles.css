@@ -237,6 +237,38 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 
+/* Keep-awake toggle: hidden by default, revealed by wake-lock.js only
+   when the Screen Wake Lock API is actually supported. */
+.wake-lock-toggle {
+  display: inline-flex;
+  align-items: center;
+  margin: 0.75rem 0 0 0.6rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.wake-lock-toggle:hover,
+.wake-lock-toggle:focus-visible {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.wake-lock-toggle[aria-pressed="true"] {
+  background: #ffffff;
+  color: var(--color-heading);
+  font-weight: bold;
+}
+
+.wake-lock-toggle[hidden] {
+  display: none;
+}
+
 ul, ol {
   margin: 0 0 1rem;
   padding-left: 1.5rem;
