@@ -225,24 +225,55 @@ h1, h2, h3, h4 {
   text-align: left;
 }
 
-.category-badge {
+.hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.category-badge,
+.tag-badge {
   display: inline-block;
-  margin: 0.75rem 0 0;
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+}
+
+.category-badge {
   background: rgba(255, 255, 255, 0.2);
   color: #ffffff;
-  font-size: 0.85rem;
-  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
-/* Keep-awake toggle: hidden by default, revealed by wake-lock.js only
-   when the Screen Wake Lock API is actually supported. */
-.wake-lock-toggle {
+.tag-badge {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+}
+
+.recipe-meta {
+  margin: 0.6rem 0 0;
+  color: #ffffff;
+  opacity: 0.9;
+  font-size: 0.95rem;
+  max-width: none;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+}
+
+/* Shared pill-button look for the keep-awake and print actions */
+.hero-button {
   display: inline-flex;
   align-items: center;
-  margin: 0.75rem 0 0 0.6rem;
+  gap: 0.35rem;
   padding: 0.3rem 0.8rem;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 999px;
@@ -254,11 +285,13 @@ h1, h2, h3, h4 {
   transition: background 0.15s ease, color 0.15s ease;
 }
 
-.wake-lock-toggle:hover,
-.wake-lock-toggle:focus-visible {
+.hero-button:hover,
+.hero-button:focus-visible {
   background: rgba(255, 255, 255, 0.25);
 }
 
+/* Keep-awake toggle: hidden by default, revealed by wake-lock.js only
+   when the Screen Wake Lock API is actually supported. */
 .wake-lock-toggle[aria-pressed="true"] {
   background: #ffffff;
   color: var(--color-heading);
