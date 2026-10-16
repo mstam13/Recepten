@@ -547,6 +547,19 @@ a:visited {
   font-size: 0.9rem;
 }
 
+.recipe-photo {
+  margin: 0 0 1.5rem;
+}
+
+.recipe-photo img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -630,7 +643,8 @@ a:visited {
     page-break-inside: avoid;
   }
 
-  .gallery img {
+  .gallery img,
+  .recipe-photo img {
     box-shadow: none;
   }
 }
