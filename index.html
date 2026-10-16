@@ -5,7 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Recepten</title>
 <meta name="description" content="Familierecepten per maaltijdtype: hoofdgerechten, salades en nagerechten, waaronder Lemon bars, Pasta Rode Pesto en Italiaanse salade met tomaat en mozzarella.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Recepten">
+<meta property="og:description" content="Familierecepten per maaltijdtype: hoofdgerechten, salades en nagerechten.">
+<meta property="og:image" content="https://mstam13.github.io/Recepten/files/Lemon-bars-recept.jpg">
+<meta property="og:url" content="https://mstam13.github.io/Recepten/index.html">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%8D%BD%EF%B8%8F</text></svg>">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#c04c0a">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,15 +33,38 @@
   </ul>
 </nav>
 
+<div class="filters">
+  <div class="filters-row">
+    <label class="visually-hidden" for="recipe-search">Zoek recepten</label>
+    <input type="search" id="recipe-search" placeholder="Zoek op naam of ingrediënt…">
+    <button type="button" class="button-primary" data-random-recipe>🎲 Verrassingsrecept</button>
+  </div>
+  <div class="filter-chips" role="group" aria-label="Filter op kenmerk">
+    <button type="button" class="filter-chip" data-filter-tag="vegetarisch" aria-pressed="false">Vegetarisch</button>
+    <button type="button" class="filter-chip" data-filter-tag="snel-klaar" aria-pressed="false">Snel klaar</button>
+    <button type="button" class="filter-chip" data-filter-tag="glutenvrij" aria-pressed="false">Glutenvrij</button>
+    <button type="button" class="filter-chip filter-chip-reset" data-filter-reset>Wis filters</button>
+  </div>
+</div>
+
+<p id="no-results-message" hidden>Geen recepten gevonden. Probeer een andere zoekterm of filter.</p>
+
 <main id="main-content">
 
   <section class="category" id="hoofdgerechten" aria-labelledby="hoofdgerechten-title">
     <h2 class="category-title" id="hoofdgerechten-title">Hoofdgerechten</h2>
     <ul class="recipe-grid">
-      <li class="recipe-card">
+      <li class="recipe-card" data-tags="vegetarisch snel-klaar" data-search="pasta rode pesto crème fraîche tomaatjes mozzarella basilicum penne hoofdgerecht">
         <a href="recipes/pasta-rode-pesto.html">
-          <span class="recipe-card-title">Pasta Rode Pesto</span>
-          <span class="recipe-card-meta">Pasta met rode pesto, crème fraîche, tomaatjes en mozzarella</span>
+          <picture class="recipe-card-thumb">
+            <source srcset="files/placeholder-pasta.webp" type="image/webp">
+            <img src="files/placeholder-pasta.png" width="440" height="230" loading="lazy" alt="">
+          </picture>
+          <span class="recipe-card-body">
+            <span class="recipe-card-title">Pasta Rode Pesto</span>
+            <span class="recipe-card-meta">Pasta met rode pesto, crème fraîche, tomaatjes en mozzarella</span>
+            <span class="recipe-card-time">⏱️ 25 min · 🍽️ 4 porties</span>
+          </span>
         </a>
       </li>
     </ul>
@@ -42,10 +73,17 @@
   <section class="category" id="salades" aria-labelledby="salades-title">
     <h2 class="category-title" id="salades-title">Salades</h2>
     <ul class="recipe-grid">
-      <li class="recipe-card">
+      <li class="recipe-card" data-tags="snel-klaar glutenvrij" data-search="italiaanse salade tomaat mozzarella sla cherrytomaatjes parmaham pijnboompitten balsamico">
         <a href="recipes/italiaanse-salade.html">
-          <span class="recipe-card-title">Italiaanse salade met tomaat en mozzarella</span>
-          <span class="recipe-card-meta">Sla, cherrytomaatjes, mozzarella en parmaham met balsamicodressing</span>
+          <picture class="recipe-card-thumb">
+            <source srcset="files/image006.webp" type="image/webp">
+            <img src="files/image006.jpg" width="440" height="230" loading="lazy" alt="">
+          </picture>
+          <span class="recipe-card-body">
+            <span class="recipe-card-title">Italiaanse salade met tomaat en mozzarella</span>
+            <span class="recipe-card-meta">Sla, cherrytomaatjes, mozzarella en parmaham met balsamicodressing</span>
+            <span class="recipe-card-time">⏱️ 15 min · 🍽️ 4 porties</span>
+          </span>
         </a>
       </li>
     </ul>
@@ -54,10 +92,17 @@
   <section class="category" id="nagerechten" aria-labelledby="nagerechten-title">
     <h2 class="category-title" id="nagerechten-title">Nagerechten</h2>
     <ul class="recipe-grid">
-      <li class="recipe-card">
+      <li class="recipe-card" data-tags="vegetarisch" data-search="lemon bars citroen bodem citroenlaag nagerecht boter basterdsuiker">
         <a href="recipes/lemon-bars.html">
-          <span class="recipe-card-title">Lemon bars</span>
-          <span class="recipe-card-meta">Boterachtige bodem met een romige citroenlaag</span>
+          <picture class="recipe-card-thumb">
+            <source srcset="files/Lemon-bars-recept.webp" type="image/webp">
+            <img src="files/Lemon-bars-recept.jpg" width="440" height="230" loading="lazy" alt="">
+          </picture>
+          <span class="recipe-card-body">
+            <span class="recipe-card-title">Lemon bars</span>
+            <span class="recipe-card-meta">Boterachtige bodem met een romige citroenlaag</span>
+            <span class="recipe-card-time">⏱️ 55 min · 🍽️ 16 stukken</span>
+          </span>
         </a>
       </li>
     </ul>
@@ -65,5 +110,7 @@
 
 </main>
 
+<script src="home.js" defer></script>
+<script src="pwa-register.js" defer></script>
 </body>
 </html>
