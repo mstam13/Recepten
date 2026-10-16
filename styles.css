@@ -302,6 +302,66 @@ h1, h2, h3, h4 {
   display: none;
 }
 
+/* Servings/yield scaler shown above the ingredient lists */
+.servings-control {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid #f0d9c9;
+  border-radius: 8px;
+  background: #fff8f3;
+  max-width: none;
+}
+
+.servings-control label {
+  font-weight: bold;
+  color: var(--color-heading);
+}
+
+.servings-stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.servings-stepper button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-heading);
+  background: #ffffff;
+  color: var(--color-heading);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.servings-stepper button:hover,
+.servings-stepper button:focus-visible {
+  background: var(--color-heading);
+  color: #ffffff;
+}
+
+.servings-stepper input {
+  width: 3.5rem;
+  text-align: center;
+  padding: 0.3rem;
+  border: 1px solid #f0d9c9;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.servings-hint {
+  margin: 0;
+  flex-basis: 100%;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
 ul, ol {
   margin: 0 0 1rem;
   padding-left: 1.5rem;
@@ -389,7 +449,8 @@ a:visited {
   .skip-link,
   .hero,
   .toc,
-  .back-to-top {
+  .back-to-top,
+  .servings-control {
     display: none;
   }
 
