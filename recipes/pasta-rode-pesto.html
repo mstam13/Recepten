@@ -4,8 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pasta Rode Pesto · Recepten</title>
-<meta name="description" content="Recept voor pasta met rode pesto, crème fraîche, tomaatjes en mozzarella.">
+<meta name="description" content="Recept voor pasta met rode pesto, crème fraîche, tomaatjes en mozzarella. Klaar in 25 min · 4 porties.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pasta Rode Pesto · Recepten">
+<meta property="og:description" content="Pasta met rode pesto, crème fraîche, tomaatjes en mozzarella. Klaar in 25 min · 4 porties.">
+<meta property="og:image" content="https://mstam13.github.io/Recepten/files/placeholder-pasta.png">
+<meta property="og:url" content="https://mstam13.github.io/Recepten/recipes/pasta-rode-pesto.html">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>%F0%9F%8D%BD%EF%B8%8F</text></svg>">
+<link rel="manifest" href="../manifest.webmanifest">
+<meta name="theme-color" content="#c04c0a">
 <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -15,17 +23,35 @@
 <header class="hero hero-recipe" id="top">
   <p class="breadcrumb"><a href="../index.html">← Alle recepten</a></p>
   <h1>Pasta Rode Pesto</h1>
-  <p class="category-badge">Hoofdgerecht</p>
-  <button type="button" class="wake-lock-toggle" data-wake-lock-toggle data-label-on="📱 Scherm blijft actief" aria-pressed="false" hidden>📱 Scherm actief houden</button>
+  <div class="hero-badges">
+    <p class="category-badge">Hoofdgerecht</p>
+    <span class="tag-badge">Vegetarisch</span>
+    <span class="tag-badge">Snel klaar</span>
+  </div>
+  <p class="recipe-meta">⏱️ Bereiden: 10 min · Koken: 15 min · 🍽️ 4 porties</p>
+  <div class="hero-actions">
+    <button type="button" class="hero-button wake-lock-toggle" data-wake-lock-toggle data-label-on="📱 Scherm blijft actief" aria-pressed="false" hidden>📱 Scherm actief houden</button>
+    <button type="button" class="hero-button print-button" data-print-button>🖨️ Print recept</button>
+  </div>
 </header>
 
 <main id="main-content">
 
   <article id="pasta-rode-pesto">
 
+    <div class="servings-control" data-servings-control data-base-servings="4">
+      <label for="servings-input">Aantal personen</label>
+      <div class="servings-stepper">
+        <button type="button" data-servings-decrease aria-label="Minder personen">−</button>
+        <input type="number" id="servings-input" min="1" max="99" value="4" data-servings-input inputmode="numeric">
+        <button type="button" data-servings-increase aria-label="Meer personen">+</button>
+      </div>
+      <p class="servings-hint">Pas het aantal personen aan; de hoeveelheden hieronder worden automatisch herberekend.</p>
+    </div>
+
     <h3 class="label-heading">Ingrediënten</h3>
     <ul>
-      <li>1 pak penne</li>
+      <li><span data-amt="1">1</span> pak penne</li>
       <li>Potje rode pesto</li>
       <li>Crème fraîche</li>
       <li>Tomaatjes</li>
@@ -47,6 +73,41 @@
 
 </main>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Recipe",
+  "name": "Pasta Rode Pesto",
+  "image": ["https://mstam13.github.io/Recepten/files/placeholder-pasta.png"],
+  "description": "Pasta met rode pesto, crème fraîche, tomaatjes en mozzarella.",
+  "recipeCategory": "Hoofdgerecht",
+  "recipeCuisine": "Italiaans",
+  "keywords": "pasta, pesto, vegetarisch, snel klaar",
+  "prepTime": "PT10M",
+  "cookTime": "PT15M",
+  "totalTime": "PT25M",
+  "recipeYield": "4 porties",
+  "suitableForDiet": "https://schema.org/VegetarianDiet",
+  "recipeIngredient": [
+    "1 pak penne",
+    "Potje rode pesto",
+    "Crème fraîche",
+    "Tomaatjes",
+    "Mozzarella",
+    "Basilicum"
+  ],
+  "recipeInstructions": [
+    { "@type": "HowToStep", "text": "Pesto, crème fraîche en tomaatjes in 1 pan, doorwarmen en goed doorroeren." },
+    { "@type": "HowToStep", "text": "Mozzarella erbij doen." },
+    { "@type": "HowToStep", "text": "Pasta koken." },
+    { "@type": "HowToStep", "text": "Pasta aan de pestomix toevoegen." },
+    { "@type": "HowToStep", "text": "Garneren met de basilicum." }
+  ]
+}
+</script>
+
 <script src="../wake-lock.js" defer></script>
+<script src="../recipe-interactions.js" defer></script>
+<script src="../pwa-register.js" defer></script>
 </body>
 </html>
