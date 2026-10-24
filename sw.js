@@ -1,7 +1,7 @@
 // Minimal offline-support service worker: precaches the app shell on
 // install, then serves cached responses first while refreshing them
 // from the network in the background (stale-while-revalidate).
-const CACHE_NAME = 'recepten-v1';
+const CACHE_NAME = 'recepten-v2';
 
 const APP_SHELL = [
   './',
@@ -15,6 +15,7 @@ const APP_SHELL = [
   './recipes/lemon-bars.html',
   './recipes/pasta-rode-pesto.html',
   './recipes/italiaanse-salade.html',
+  './recipes/creme-brulee-tiramisu.html',
   './icons/icon-192.png',
   './icons/icon-512.png',
 ];

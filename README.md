@@ -13,6 +13,7 @@ bezoek ook offline.
   - Italiaanse salade met tomaat en mozzarella
 - Nagerechten
   - Lemon bars
+  - Crème brûlée-tiramisu
 
 ## Functies
 
